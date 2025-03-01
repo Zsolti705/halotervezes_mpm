@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hálótervezés</title>
+    <style>
+        .lap {
+            width: 560px;
+            height: 793px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .cim {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .section {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .content {
+            font-size: 16px;
+            text-align: left;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="lap">
+        <div class="cim">HÁLÓTERVEZÉS - MPM</div>
+        <div class="section">JELLEMZŐI</div>
+        <div class="content">
+            A háló egyik jellemzője, hogy tevékenység-csomópontú, legfontosabb elemei a
+            csomóponthoz rendelt tevékenységek és az éleken jelölt kapcsolatok<br>
+            A tevékenységek közötti élek nyíllal irányítottak, a kapcsolatot a nyilakon tüntetjük fel.
+        </div>
+        <div class="section">KAPCSOLATOK</div>
+        <div class="content">
+             <strong>Vége – Kezdet kapcsolat VK(t)</strong><br>
+            Azt fejezi ki, hogy a követő tevékenység mennyivel később kezdődjön el az előző
+            tevékenység végéhez képest. Ezt a minimálisan betartandó időt (t) írjuk a VK rövidítés
+            után.<br>
+             <strong>Kezdet – Kezdet kapcsolat: KK(t)</strong><br>
+            Jellemzője, hogy a követő tevékenység kezdetét a megelőző tevékenység kezdetéhez
+            viszonyítják, és az így megadott idő (t) a kezdőpontok közötti minimális követési
+            távolságot adja meg<br>
+             <strong>Vége – Vége kapcsolat: VV(t)</strong><br>
+            Jellemzője, hogy a tevékenységek befejezése közötti időminimumot adják meg, azaz hogy
+            a követő tevékenység befejezése és a megelőző tevékenység befejezése között legalább
+            mennyi idő teljen el.<br>
+        </div>
+        <div class="section">MPM HÁLÓ KÉSZÍTÉSE</div>
+        <div class="image-container">
+            <img src="halo.png" alt="MPM háló">
+        </div>
+        <div class="section">Források:</div>
+        <div class="content">
+            <p><a href="https://www.oplit.com/en/articles/la-methode-des-potentiels-metra-mpm" target="_blank">1. Weboldal</a><br>
+            <a href="https://www.nive.hu/Downloads/Szakkepzesi_dokumentumok/Bemeneti_kompetenciak_meresi_ertekelesi_eszkozrend" target="_blank">2. Weboldal</a><br>
+            Szervezési Technikák – hálótervezés - Dr. Kosztyán Zsolt Tibor (prezentáció)<br>
+            Münnich Ákos Tanárúr prezentációja<br>
+            2025.03.01<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
